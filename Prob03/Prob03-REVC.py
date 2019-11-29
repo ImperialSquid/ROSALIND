@@ -1,4 +1,4 @@
-with open("Prob3-REVC-in.txt", "r") as f:
+with open("Prob03-REVC-in.txt", "r") as f:
     bases = f.readline()
 
 bases = bases[::-1]
@@ -9,5 +9,5 @@ for i, nt in enumerate(list("ACGT")):
 for i, cnt in enumerate(list("TGCA")):
     bases = bases.replace(str(i), cnt)
 
-with open("Prob3-REVC-out.txt", "w") as f:
+with open("Prob03-REVC-out.txt", "w") as f:
     f.write(bases)

@@ -1,4 +1,4 @@
-with open("Prob9-SUBS-in.txt", "r") as f:
+with open("Prob09-SUBS-in.txt", "r") as f:
     superstr = f.readline().strip()
     substr = f.readline().strip()
 
@@ -11,5 +11,5 @@ while True:
     else:
         indexes.append(index)
 
-with open("Prob9-SUBS-out.txt", "w") as f:
+with open("Prob09-SUBS-out.txt", "w") as f:
     f.write(" ".join([str(x + 1) for x in indexes]))

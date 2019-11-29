@@ -3,7 +3,7 @@ seqs = dict()
 def getCGContent(seq):
     return (seq.count("C")+seq.count("G"))/len(seq)
 
-with open("Prob5-GC-in.txt", "r") as f:
+with open("Prob05-GC-in.txt", "r") as f:
     currentSeq = ""
     for line in f:
         if line[0] == ">":
@@ -19,7 +19,7 @@ for key in seqs.keys():
         highestCGContent = getCGContent(seqs[key])
         highestCGid = key
 
-with open("Prob5-GC-out.txt", "w") as f:
+with open("Prob05-GC-out.txt", "w") as f:
     f.write(highestCGid)
     f.write("\n")
     f.write(str(highestCGContent*100))

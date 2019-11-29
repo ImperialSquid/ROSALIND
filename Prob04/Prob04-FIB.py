@@ -1,4 +1,4 @@
-with open("Prob4-FIB-in.txt", "r") as f:
+with open("Prob04-FIB-in.txt", "r") as f:
     in_ = f.readline()
     gens = int(in_.split(" ")[0])
     offspring = int(in_.split(" ")[1])
@@ -14,5 +14,5 @@ for gen in range(gens-1):
     adultPrev = adult
     chldPrev = chld
 
-with open("Prob4-FIB-out.txt", "w") as f:
+with open("Prob04-FIB-out.txt", "w") as f:
     f.write(str(adult+chld))

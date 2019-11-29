@@ -1,4 +1,4 @@
-with open("Prob8-PROT-in.txt", "r") as f:
+with open("Prob08-PROT-in.txt", "r") as f:
     dnaString = f.readline().strip()
 
 dnaProtDict = {"UUU":"F",    "CUU":"L", "AUU":"I", "GUU":"V",
@@ -23,5 +23,5 @@ prots = [dnaProtDict[codon] for codon in codons]
 protString = "".join(prots)
 protString = protString.replace("Stop", "")
 
-with open("Prob8-PROT-out.txt", "w") as f:
+with open("Prob08-PROT-out.txt", "w") as f:
     f.write(protString)
