@@ -1,7 +1,7 @@
 import os
 
-probCode = "IPRB"
-probNum = "7"
+probCode = "FIBD"
+probNum = "10"
 
 try:
     os.mkdir("Prob{}".format(probNum))
